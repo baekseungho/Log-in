@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <title>Hello, world</title>
+</head>
+<body>
+  <div class="wrapper"> 
+    <button id="login-btn" type="button" class="btn btn-primary">로그인</button>
+    <div class="overlay">
+      <div class="login-box">
+        <h2>로그인</h2>
+        <!-- 서버에 정보를 전송할 때 사용 -->
+        <!-- 전송할 서버가 없으니 local로 전송 -->
+        <form action="./test.html">
+          <input id="id" type="text" class="form-control" placeholder="ID" aria-label="Username">
+          <p id="noid">아이디를 입력하세요.</p>
+          <input id="pw" type="password" class="form-control" placeholder="PASSWORD" aria-label="Username">
+          <p id="nopw">비밀번호를 입력하세요.</p>
+          <p id="sixpw">비밀번호를 6자 이상으로 설정하세요.</p>
+          <button id="submit-btn" type="submit" class="btn btn-primary">전송</button>
+          <button id="close-btn" type="button" class="btn btn-danger">닫기</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./js/form.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

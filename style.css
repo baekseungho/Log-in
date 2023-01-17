@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  padding: 20px;
+}
+.login-box{
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+}
+#id{
+  margin-top: 15px;
+}
+#pw{
+  margin-top: 15px;
+}
+#noid{
+  color: red;
+  display: none;
+}
+#nopw{
+  color: red;
+  display: none;
+}
+#sixpw{
+  color: red;
+  display: none;
+}
+
+.login-box button{
+  margin-top: 15px;
+}
+.overlay{
+  width: 100%;
+  height:100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+}
+
+.overlay.open-modal {
+  visibility: visible;
+  opacity: 1;
+}
